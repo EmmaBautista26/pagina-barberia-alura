@@ -1,0 +1,333 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    height: 20px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(134, 80, 29);
+    border-radius: 5px;
+}
+
+header{
+    background-color: #e9e3e0;
+    padding: 20px 0;/*arriba-abajo, derecha-izq*/
+}
+
+.caja{
+    width: 940px;/*es comun que las pagina tenga 1280px, mas o menos ocuparia el 70% de ese espacio*/
+    position: relative; /*a la posicion absoluta del nav*/
+    margin: 0 auto; /*el navegador calcula en funcion en automatica que sea el mismo valor para que sea central*/
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{/*captura el movimiento del puntero*/
+    color: rgb(105, 45, 1);
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background-color:violet;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;/*si lo dejamos asi abarca mas de los 940px inciales*/
+    box-sizing: border-box; /*el borde cada item es el limite del espacio que sera definido*/
+    border: 2px solid #000000;/*border-width border-style, border-color*/
+    border-radius: 10px;/*si,sd,id,ii. 1 solo, para todos*/
+}
+
+.productos li:hover{
+    border-color: rgb(131, 55, 0);
+}
+
+.productos li:active{/*se activa cuando se hace click sobre ello*/
+    border-color: rgb(0, 17, 92);
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    /*unicode-table.com*/
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form legend{
+    padding: 15px 0 0 0;
+    font-weight: bold;
+}
+
+form{
+    padding-left: 30px ;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+
+
+select{
+    width: 20%;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.checkbox{
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.enviar{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: bold;
+    color:#ffffff;
+    background: rgb(131, 55, 0);
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all; /*o puede ser sólo ciertos parametros*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(0, 17, 92);
+    transform: scale(1.10);
+}
+
+table{
+    margin:40px auto;
+}
+
+thead{
+    background-color: #888888;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding:8px 15px;
+}
+
+/*CSS PARA HOME*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    background-color: #FEFEFE;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*multiplica x2 el tamaño que usa el navegador*/
+    margin: 0 0 1em;
+    clear: left; /*cualquier configuración que venga después del título, que la limpie, la imagen sólo aplica a un bloque*/
+    font-weight: bold;
+}
+
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    font-size: 13px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utencilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;/*arriba, derecha, abajo, izq*/
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #e9e3e0);/*se pueden colocar grados para que sea en diferentes direcciones. También si queremos cambiar de el ancho ponemos un porcentaje*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background-color: #e9e3e0;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5; /*aumenta tamaño de la linea y letra*/
+}
+
+.items::before{
+    content: "🟊";
+}
+
+.items:first-child{/*funcion que le da la caracteristica al primer elemento de la lista (o nth-child() con el numero, o 2n para pares)*/
+    font-weight: bold; 
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    box-shadow: 10px 10px 30px 15px #000000;
+    border-radius: 10px;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+    transition: 400ms;
+}
+
+.video{
+    width: 560px;
+    margin: 6em auto 1em auto;
+}
+
+/*pseudo-elementos: podemos editar la primer letra, la primera línea, o agregar algún elemento al inicio y al final. .elemento:after, before, first letter, first line, etc*/
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    body{
+        .caja, .principal, .mapa-contenido, .contenido-diferenciales{
+            width: auto
+        };
+        .lista-diferenciales{
+            width: 100%;
+            padding-bottom: 18px;
+        }
+        .imagen-diferenciales{
+            width: 100%;
+        }
+        .video{
+            width: auto;
+            padding-top: 15px;
+        } 
+    
+        .productos li{
+            width: 75%;
+            padding: 0;
+            margin: 50px;
+        }
+        .productos{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .producto-descripcion, .producto-precio, h2{
+            margin: 15px 15px;
+        }
+        .input-padron{
+            padding-right: 80px;
+        }
+    }
+}
